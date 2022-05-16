@@ -69,10 +69,6 @@ implements EventEmissionI {
 			new ThreadPoolExecutor(N, N, 0L, TimeUnit.MILLISECONDS, 
 					new ArrayBlockingQueue<Runnable>(CAPACITY),
 					new ThreadPoolExecutor.CallerRunsPolicy());
-	protected ThreadPoolExecutor exec_subsribe = 
-			new ThreadPoolExecutor(N, N, 0L, TimeUnit.MILLISECONDS, 
-					new ArrayBlockingQueue<Runnable>(CAPACITY),
-					new ThreadPoolExecutor.CallerRunsPolicy());
 
 	protected CEPBus(
 			String uri_BMcepBusEmetteurIP,
