@@ -220,32 +220,23 @@ implements EventEmissionI {
 	/**
 	 * abonne emitteur aux correlateurs
 	 * 
-	 * @param subscriberURI l'uri de correlateur a  abonner
+	 * @param subscriberURI l'uri de correlateur aÂ  abonner
 	 * @param emitterURI    l'uri d'emetteur ou de correlateur
 	 */
 	public void subscribe(String subscriberURI, String emitterURI) throws Exception {
-		Runnable RegisterTask = ()->{
-			try {
-				if (abonneCorrelateurs.containsKey(emitterURI)) {
-					abonneCorrelateurs.get(emitterURI).add(subscriberURI);
-				} else {
-					Vector<String> abonne = new Vector<String>();
-					abonne.add(subscriberURI);
-					abonneCorrelateurs.put(emitterURI, abonne);
-				}
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		};
-		
-		exec_subsribe.submit(RegisterTask);
-		
+		if (abonneCorrelateurs.containsKey(emitterURI)) {
+			abonneCorrelateurs.get(emitterURI).add(subscriberURI);
+		} else {
+			Vector<String> abonne = new Vector<String>();
+			abonne.add(subscriberURI);
+			abonneCorrelateurs.put(emitterURI, abonne);
+		}		
 	}
 
 	/**
 	 * desabonne le correlateur aux evenements emis par l'emetteur ou le correlateur
 	 * 
-	 * @param subscriberURI l'uri de correlateur a  desabonner
+	 * @param subscriberURI l'uri de correlateur aÂ  desabonner
 	 * @param emitterURI    emitterURI l'uri d'emetteur ou de correlateur
 	 */
 	public void unsubscribe(String subscriberURI, String emitterURI) throws Exception {
@@ -255,11 +246,11 @@ implements EventEmissionI {
 	}
 
 	/**
-	 * emettre un evenement a  propager vers les destinataires abonnes aux evenements
+	 * emettre un evenement aÂ  propager vers les destinataires abonnes aux evenements
 	 * en provence de l'emetteur
 	 * 
 	 * @param emitterURI l'uri d'emetteur
-	 * @param event      l'evenement a  propager
+	 * @param event      l'evenement aÂ  propager
 	 */
 	public void correReceiveEvent(String emitterURI, EventI event) throws Exception {
 		if(!abonneCorrelateurs.get(emitterURI).isEmpty()) {
@@ -271,11 +262,11 @@ implements EventEmissionI {
 	}
 
 	/**
-	 * envoyer un tableau d'evenements a  propager vers les destinataires abonnes aux
+	 * envoyer un tableau d'evenements aÂ  propager vers les destinataires abonnes aux
 	 * evenements en provence de l'emetteur
 	 * 
 	 * @param emitterURI l'uri d'emetteur
-	 * @param events     l'evenement a  propager
+	 * @param events     l'evenement aÂ  propager
 	 */
 	public void correReceiveEvents(String emitterURI, EventI[] events) throws Exception {
 		if(!abonneCorrelateurs.get(emitterURI).isEmpty()) {
