@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="deployment/jars/BCM4Java-13042022.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/BCM4Java-CyPhy-12102021.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/commons-math3-3.5.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/javassist.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/jing.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/Simulation-21032022.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/SmartCityCommons-21032022.jar"/>
+	<classpathentry kind="lib" path="deployment/jars/SmartCitySmall-11052022.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

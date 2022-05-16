@@ -1,0 +1,25 @@
+1652533994365|DCVM Cyclic Barrier up and running!
+1652533994377|All connected!
+1652533994389|DCVM Cyclic Barrier accepts: jvm2 localhost 51323
+1652533994390|DCVM Cyclic Barrier accepts: jvm1 localhost 51324
+1652533994391|DCVM Cyclic Barrier has received 1 out of 2 expected.
+1652533994391|DCVM Cyclic Barrier has received 2 out of 2 expected.
+1652533994391|DCVM Cyclic Barrier releases 2 sites.
+1652533994399|DCVM Cyclic Barrier accepts: jvm1 localhost 51324
+1652533994400|DCVM Cyclic Barrier has received 1 out of 2 expected.
+1652533994410|DCVM Cyclic Barrier accepts: jvm2 localhost 51323
+1652533994421|DCVM Cyclic Barrier has received 2 out of 2 expected.
+1652533994421|DCVM Cyclic Barrier releases 2 sites.
+1652534002221|DCVM Cyclic Barrier accepts: jvm1 localhost 51324
+1652534002222|DCVM Cyclic Barrier has received 1 out of 2 expected.
+1652534003702|DCVM Cyclic Barrier accepts: jvm2 localhost 51323
+1652534003703|DCVM Cyclic Barrier has received 2 out of 2 expected.
+1652534003703|DCVM Cyclic Barrier releases 2 sites.
+1652534003708|DCVM Cyclic Barrier accepts: jvm1 localhost 51324
+1652534003709|DCVM Cyclic Barrier has received 1 out of 2 expected.
+1652534003715|DCVM Cyclic Barrier accepts: jvm2 localhost 51323
+1652534003716|DCVM Cyclic Barrier has received 2 out of 2 expected.
+1652534003716|DCVM Cyclic Barrier releases 2 sites.
+1652534014100|DCVMCyclicBarrier.run() finished.
+1652534014174|DCVMCyclicBarrier.run() finished.
+1652534014175|DCVM Cyclic Barrier shuts down!
